@@ -229,17 +229,17 @@ export default function Home() {
           </div>
 
           {/* Social Links Placeholder */}
-          <div className="flex justify-center space-x-6 mb-8">
-            <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300 cursor-pointer">
-              <span className="text-white text-sm font-bold">L</span>
-            </div>
-            <div className="w-10 h-10 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300 cursor-pointer">
-              <span className="text-white text-sm font-bold">T</span>
-            </div>
-            <div className="w-10 h-10 bg-gradient-to-r from-pink-600 to-red-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300 cursor-pointer">
-              <span className="text-white text-sm font-bold">A</span>
-            </div>
-          </div>
+          // <div className="flex justify-center space-x-6 mb-8">
+          //   <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300 cursor-pointer">
+          //     <span className="text-white text-sm font-bold">L</span>
+          //   </div>
+          //   <div className="w-10 h-10 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300 cursor-pointer">
+          //     <span className="text-white text-sm font-bold">T</span>
+          //   </div>
+          //   <div className="w-10 h-10 bg-gradient-to-r from-pink-600 to-red-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300 cursor-pointer">
+          //     <span className="text-white text-sm font-bold">A</span>
+          //   </div>
+          // </div>
 
           <div className="text-gray-500 text-sm">
             &copy; 2025 Latto. All rights reserved. | Dibuat dengan ❤️ untuk
