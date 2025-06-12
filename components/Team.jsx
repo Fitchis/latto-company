@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Linkedin, Twitter, Mail, Github } from "lucide-react";
+import Link from "next/link";
 
 function Team() {
   const [hoveredMember, setHoveredMember] = useState(null);
@@ -7,11 +8,10 @@ function Team() {
   const teamMembers = [
     {
       id: 1,
-      name: "Sarah Johnson",
+      name: "Dimas Yudha Rahmattulloh",
       role: "CEO & Founder",
-      image:
-        "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
-      bio: "Visionary leader with 10+ years in tech innovation and startup growth.",
+      image: "./images/dimas.jpg?w=400&h=400&fit=crop&crop=face",
+      bio: "Visionary leader with a decade of experience spearheading technological innovation and fostering startup expansion. Dimas is committed to driving the company's strategic vision and achieving sustainable growth.",
       social: {
         linkedin: "#",
         twitter: "#",
@@ -20,24 +20,22 @@ function Team() {
     },
     {
       id: 2,
-      name: "Michael Chen",
+      name: "A.Luthfi Mohammad Abdillah A",
       role: "CTO",
-      image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
-      bio: "Full-stack architect passionate about scalable solutions and emerging tech.",
+      image: "./images/lupi.jpg?w=400&h=400&fit=crop&crop=face",
+      bio: "A highly skilled full-stack architect, Luthfi specializes in crafting scalable and robust solutions while staying at the forefront of emerging technologies. His expertise ensures the development of cutting-edge and efficient systems.",
       social: {
-        linkedin: "#",
-        github: "#",
-        email: "michael@company.com",
+        linkedin: "www.linkedin.com/in/andilthfi",
+        github: "https://github.com/Fitchis",
+        email: "andilthfi@gmail.com",
       },
     },
     {
       id: 3,
-      name: "Emily Rodriguez",
-      role: "Head of Design",
-      image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
-      bio: "Creative designer focused on user-centered design and brand innovation.",
+      name: "Fuad Ramdhan Nugroho",
+      role: "COO",
+      image: "./images/fuadd.jpg?w=400&h=400&fit=crop&crop=face",
+      bio: "As Chief Operating Officer, Fuad orchestrates seamless operations and maximizes efficiency across all departments. His focus on strategic planning and operational excellence ensures smooth execution and optimal performance.",
       social: {
         linkedin: "#",
         twitter: "#",
@@ -46,11 +44,10 @@ function Team() {
     },
     {
       id: 4,
-      name: "David Kim",
-      role: "Lead Developer",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
-      bio: "Senior developer with expertise in React, Node.js, and cloud architecture.",
+      name: "Haydar Thoriq Abdullah",
+      role: "CMO",
+      image: "./images/haydar.jpg?w=400&h=400&fit=crop&crop=face",
+      bio: "Haydar, our Chief Marketing Officer, is a strategic powerhouse adept at driving impactful marketing campaigns and forging strong partnerships. He leverages data-driven insights to expand market reach and brand visibility.",
       social: {
         github: "#",
         linkedin: "#",
@@ -59,28 +56,14 @@ function Team() {
     },
     {
       id: 5,
-      name: "Lisa Thompson",
-      role: "Marketing Director",
-      image:
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=face",
-      bio: "Strategic marketer driving growth through data-driven campaigns and partnerships.",
+      name: "Muhammad Faiz Albar",
+      role: "CFO",
+      image: "./images/faiz.jpg?w=400&h=400&fit=crop&crop=face",
+      bio: "Muhammad Faiz, the Chief Financial Officer, brings strong financial acumen and strategic oversight to ensure fiscal health and sustainable growth. He manages financial planning, analysis, and reporting to support key business decisions.",
       social: {
         linkedin: "#",
         twitter: "#",
         email: "lisa@company.com",
-      },
-    },
-    {
-      id: 6,
-      name: "James Wilson",
-      role: "Product Manager",
-      image:
-        "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=face",
-      bio: "Product strategist with a track record of launching successful digital products.",
-      social: {
-        linkedin: "#",
-        twitter: "#",
-        email: "james@company.com",
       },
     },
   ];
@@ -132,8 +115,6 @@ function Team() {
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                   </div>
-                  {/* Online Status */}
-                  <div className="absolute bottom-2 right-1/2 transform translate-x-6 w-6 h-6 bg-green-400 border-4 border-slate-900 rounded-full shadow-lg group-hover:scale-110 transition-transform duration-300"></div>
                 </div>
 
                 {/* Member Info */}
@@ -152,36 +133,36 @@ function Team() {
                 {/* Social Links */}
                 <div className="flex justify-center space-x-4">
                   {member.social.linkedin && (
-                    <a
+                    <Link
                       href={member.social.linkedin}
                       className="w-10 h-10 bg-white/10 hover:bg-purple-500 backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 hover:shadow-lg group/social border border-white/20 hover:border-purple-400"
                     >
                       <Linkedin className="w-5 h-5 text-slate-300 group-hover/social:text-white transition-colors duration-300" />
-                    </a>
+                    </Link>
                   )}
                   {member.social.twitter && (
-                    <a
+                    <Link
                       href={member.social.twitter}
                       className="w-10 h-10 bg-white/10 hover:bg-pink-500 backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 hover:shadow-lg group/social border border-white/20 hover:border-pink-400"
                     >
                       <Twitter className="w-5 h-5 text-slate-300 group-hover/social:text-white transition-colors duration-300" />
-                    </a>
+                    </Link>
                   )}
                   {member.social.github && (
-                    <a
+                    <Link
                       href={member.social.github}
                       className="w-10 h-10 bg-white/10 hover:bg-slate-700 backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 hover:shadow-lg group/social border border-white/20 hover:border-slate-400"
                     >
                       <Github className="w-5 h-5 text-slate-300 group-hover/social:text-white transition-colors duration-300" />
-                    </a>
+                    </Link>
                   )}
                   {member.social.email && (
-                    <a
+                    <Link
                       href={`mailto:${member.social.email}`}
                       className="w-10 h-10 bg-white/10 hover:bg-emerald-500 backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 hover:shadow-lg group/social border border-white/20 hover:border-emerald-400"
                     >
                       <Mail className="w-5 h-5 text-slate-300 group-hover/social:text-white transition-colors duration-300" />
-                    </a>
+                    </Link>
                   )}
                 </div>
 

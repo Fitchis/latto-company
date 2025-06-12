@@ -8,67 +8,67 @@ function Portfolio() {
   const portfolioItems = [
     {
       id: 1,
-      title: "AI-Powered Learning Platform",
+      title: "Latihin.AI",
       description:
-        "Platform pembelajaran adaptif menggunakan AI untuk personalisasi konten",
+        "Platform pembelajaran adaptif menggunakan AI untuk latihan Interview",
       category: "ai",
       image: "/api/placeholder/400/300",
-      tech: ["React", "Python", "TensorFlow", "Node.js"],
-      status: "Live",
-      link: "#",
-    },
-    {
-      id: 2,
-      title: "Smart Analytics Dashboard",
-      description:
-        "Dashboard analitik real-time untuk monitoring performa bisnis",
-      category: "web",
-      image: "/api/placeholder/400/300",
-      tech: ["Next.js", "TypeScript", "Chart.js", "PostgreSQL"],
-      status: "Live",
-      link: "#",
-    },
-    {
-      id: 3,
-      title: "Mobile Learning App",
-      description:
-        "Aplikasi mobile untuk pembelajaran interaktif dengan gamifikasi",
-      category: "mobile",
-      image: "/api/placeholder/400/300",
-      tech: ["React Native", "Firebase", "Redux", "Expo"],
+      tech: ["Next", "Drizzle", "Neon", "Gemini API", "Node.js"],
       status: "Development",
       link: "#",
     },
+    // {
+    //   id: 2,
+    //   title: "Smart Analytics Dashboard",
+    //   description:
+    //     "Dashboard analitik real-time untuk monitoring performa bisnis",
+    //   category: "web",
+    //   image: "/api/placeholder/400/300",
+    //   tech: ["Next.js", "TypeScript", "Chart.js", "PostgreSQL"],
+    //   status: "Live",
+    //   link: "#",
+    // },
+    // {
+    //   id: 3,
+    //   title: "Mobile Learning App",
+    //   description:
+    //     "Aplikasi mobile untuk pembelajaran interaktif dengan gamifikasi",
+    //   category: "mobile",
+    //   image: "/api/placeholder/400/300",
+    //   tech: ["React Native", "Firebase", "Redux", "Expo"],
+    //   status: "Development",
+    //   link: "#",
+    // },
     {
       id: 4,
       title: "Chatbot Customer Service",
       description: "AI chatbot untuk layanan pelanggan 24/7 dengan NLP",
       category: "ai",
       image: "/api/placeholder/400/300",
-      tech: ["Python", "OpenAI", "FastAPI", "Docker"],
-      status: "Live",
-      link: "#",
-    },
-    {
-      id: 5,
-      title: "E-Commerce Platform",
-      description: "Platform e-commerce dengan fitur AI recommendation engine",
-      category: "web",
-      image: "/api/placeholder/400/300",
-      tech: ["Vue.js", "Laravel", "MySQL", "Redis"],
-      status: "Live",
-      link: "#",
-    },
-    {
-      id: 6,
-      title: "IoT Monitoring System",
-      description: "Sistem monitoring IoT untuk smart building management",
-      category: "iot",
-      image: "/api/placeholder/400/300",
-      tech: ["Arduino", "MQTT", "InfluxDB", "Grafana"],
+      tech: ["React JS", "Gemini AI", "FastAPI"],
       status: "Development",
       link: "#",
     },
+    // {
+    //   id: 5,
+    //   title: "E-Commerce Platform",
+    //   description: "Platform e-commerce dengan fitur AI recommendation engine",
+    //   category: "web",
+    //   image: "/api/placeholder/400/300",
+    //   tech: ["Vue.js", "Laravel", "MySQL", "Redis"],
+    //   status: "Live",
+    //   link: "#",
+    // },
+    // {
+    //   id: 6,
+    //   title: "IoT Monitoring System",
+    //   description: "Sistem monitoring IoT untuk smart building management",
+    //   category: "iot",
+    //   image: "/api/placeholder/400/300",
+    //   tech: ["Arduino", "MQTT", "InfluxDB", "Grafana"],
+    //   status: "Development",
+    //   link: "#",
+    // },
   ];
 
   const categories = [
@@ -101,7 +101,7 @@ function Portfolio() {
       : portfolioItems.filter((item) => item.category === activeFilter);
 
   return (
-    <section className="py-20">
+    <section id="portofolio" className="py-20">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">

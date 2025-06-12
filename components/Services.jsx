@@ -26,33 +26,33 @@ function Services() {
       description:
         "Custom web applications built with modern frameworks and cutting-edge technologies for optimal performance.",
       features: [
-        "React & Next.js",
+        "React, Next.js, & Laravel",
         "Full-stack Solutions",
         "API Integration",
         "Performance Optimization",
       ],
       category: "development",
-      price: "From $2,500",
+      price: "From $600 - $2,500 USD",
       duration: "2-8 weeks",
       gradient: "from-blue-500 to-cyan-500",
     },
-    {
-      id: 2,
-      icon: Smartphone,
-      title: "Mobile App Development",
-      description:
-        "Native and cross-platform mobile applications that deliver exceptional user experiences across all devices.",
-      features: [
-        "iOS & Android",
-        "React Native",
-        "App Store Optimization",
-        "Push Notifications",
-      ],
-      category: "development",
-      price: "From $5,000",
-      duration: "4-12 weeks",
-      gradient: "from-purple-500 to-pink-500",
-    },
+    // {
+    //   id: 2,
+    //   icon: Smartphone,
+    //   title: "Mobile App Development",
+    //   description:
+    //     "Native and cross-platform mobile applications that deliver exceptional user experiences across all devices.",
+    //   features: [
+    //     "iOS & Android",
+    //     "React Native",
+    //     "App Store Optimization",
+    //     "Push Notifications",
+    //   ],
+    //   category: "development",
+    //   price: "From $5,000",
+    //   duration: "4-12 weeks",
+    //   gradient: "from-purple-500 to-pink-500",
+    // },
     {
       id: 3,
       icon: Palette,
@@ -66,27 +66,27 @@ function Services() {
         "Design Systems",
       ],
       category: "design",
-      price: "From $1,500",
+      price: "From $61.64 ",
       duration: "1-4 weeks",
       gradient: "from-orange-500 to-red-500",
     },
-    {
-      id: 4,
-      icon: Globe,
-      title: "Digital Marketing",
-      description:
-        "Comprehensive digital marketing strategies that boost your online presence and drive meaningful growth.",
-      features: [
-        "SEO Optimization",
-        "Social Media",
-        "Content Strategy",
-        "Analytics",
-      ],
-      category: "marketing",
-      price: "From $800/mo",
-      duration: "Ongoing",
-      gradient: "from-green-500 to-emerald-500",
-    },
+    // {
+    //   id: 4,
+    //   icon: Globe,
+    //   title: "Digital Marketing",
+    //   description:
+    //     "Comprehensive digital marketing strategies that boost your online presence and drive meaningful growth.",
+    //   features: [
+    //     "SEO Optimization",
+    //     "Social Media",
+    //     "Content Strategy",
+    //     "Analytics",
+    //   ],
+    //   category: "marketing",
+    //   price: "From $800/mo",
+    //   duration: "Ongoing",
+    //   gradient: "from-green-500 to-emerald-500",
+    // },
     {
       id: 5,
       icon: Database,
@@ -100,27 +100,27 @@ function Services() {
         "Backup Solutions",
       ],
       category: "development",
-      price: "From $1,200",
+      price: "From $300",
       duration: "1-3 weeks",
       gradient: "from-indigo-500 to-purple-500",
     },
-    {
-      id: 6,
-      icon: Shield,
-      title: "Cybersecurity",
-      description:
-        "Comprehensive security audits and implementation of robust protection measures for your digital assets.",
-      features: [
-        "Security Audits",
-        "Penetration Testing",
-        "Compliance",
-        "Monitoring",
-      ],
-      category: "security",
-      price: "From $2,000",
-      duration: "2-6 weeks",
-      gradient: "from-red-500 to-orange-500",
-    },
+    // {
+    //   id: 6,
+    //   icon: Shield,
+    //   title: "Cybersecurity",
+    //   description:
+    //     "Comprehensive security audits and implementation of robust protection measures for your digital assets.",
+    //   features: [
+    //     "Security Audits",
+    //     "Penetration Testing",
+    //     "Compliance",
+    //     "Monitoring",
+    //   ],
+    //   category: "security",
+    //   price: "From $2,000",
+    //   duration: "2-6 weeks",
+    //   gradient: "from-red-500 to-orange-500",
+    // },
   ];
 
   const categories = [
@@ -153,18 +153,18 @@ function Services() {
       : services.filter((service) => service.category === activeCategory);
 
   const stats = [
-    { icon: Users, value: "500+", label: "Happy Clients" },
-    { icon: Zap, value: "1000+", label: "Projects Completed" },
+    { icon: Users, value: "12+", label: "Happy Clients" },
+    { icon: Zap, value: "2+", label: "Projects Completed" },
     { icon: Star, value: "99%", label: "Satisfaction Rate" },
-    { icon: Globe, value: "50+", label: "Countries Served" },
+    // { icon: Globe, value: "50+", label: "Countries Served" },
   ];
 
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-cyan-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse delay-1000"></div>
+        {/* <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div> */}
+        {/* <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-cyan-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse delay-1000"></div> */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse delay-500"></div>
       </div>
 
@@ -193,7 +193,7 @@ function Services() {
         </div>
 
         {/* Stats Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mb-20">
           {stats.map((stat, index) => (
             <div
               key={index}

@@ -8,6 +8,7 @@ import {
   Clock,
   CheckCircle,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -53,14 +54,14 @@ export default function Contact() {
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Telepon",
-      value: "+62 21 1234 5678",
-      link: "tel:+622112345678",
+      value: "+6285343557836",
+      link: "tel:+6285343557836",
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Alamat",
-      value: "Jl. Sudirman No. 123, Jakarta Pusat",
-      link: "#",
+      value: "Jl. Kebonsari Elveka Barat No.46, Surabaya Selatan",
+      link: "https://g.co/kgs/H2ieJUL",
     },
     {
       icon: <Clock className="w-6 h-6" />,
@@ -248,7 +249,7 @@ export default function Contact() {
                 </h3>
 
                 <div className="space-y-4">
-                  <a
+                  <Link
                     href="mailto:info@latto.com"
                     className="w-full bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4 flex items-center gap-3 hover:border-purple-400 hover:bg-white/20 transition-all duration-300 group"
                   >
@@ -256,17 +257,17 @@ export default function Contact() {
                     <span className="text-white group-hover:text-purple-300">
                       Email Support
                     </span>
-                  </a>
+                  </Link>
 
-                  <a
-                    href="https://wa.me/622112345678"
+                  <Link
+                    href="https://wa.me/6285343557836"
                     className="w-full bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4 flex items-center gap-3 hover:border-green-400 hover:bg-white/20 transition-all duration-300 group"
                   >
                     <Phone className="w-5 h-5 text-green-400 group-hover:text-green-300" />
                     <span className="text-white group-hover:text-green-300">
                       WhatsApp
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

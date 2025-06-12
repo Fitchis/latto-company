@@ -1,14 +1,15 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function About() {
   const [activeTab, setActiveTab] = useState("story");
 
   const stats = [
-    { number: "50+", label: "Project Selesai", icon: "🚀" },
-    { number: "25+", label: "Client Terpuaskan", icon: "⭐" },
-    { number: "3+", label: "Tahun Pengalaman", icon: "📈" },
+    { number: "2+", label: "Project Selesai", icon: "🚀" },
+    { number: "12+", label: "Client Terpuaskan", icon: "⭐" },
+    { number: "1+", label: "Tahun Pengalaman", icon: "📈" },
     { number: "100%", label: "Kepuasan Client", icon: "💯" },
   ];
 
@@ -42,50 +43,50 @@ export default function About() {
   const technologies = [
     {
       name: "Artificial Intelligence",
-      level: 95,
+      level: 68,
       color: "from-blue-500 to-cyan-500",
     },
     {
       name: "Machine Learning",
-      level: 90,
+      level: 52,
       color: "from-purple-500 to-pink-500",
     },
-    { name: "Web Development", level: 98, color: "from-green-500 to-teal-500" },
+    { name: "Web Development", level: 89, color: "from-green-500 to-teal-500" },
     {
       name: "Mobile Development",
-      level: 85,
+      level: 50,
       color: "from-orange-500 to-red-500",
     },
     {
       name: "Cloud Computing",
-      level: 88,
+      level: 57,
       color: "from-indigo-500 to-purple-500",
     },
-    { name: "Data Analytics", level: 92, color: "from-pink-500 to-rose-500" },
+    // { name: "Data Analytics", level: 92, color: "from-pink-500 to-rose-500" },
   ];
 
   const milestones = [
     {
-      year: "2022",
+      year: "2025",
       title: "Founding",
       description:
         "Latto didirikan dengan visi menghadirkan solusi AI terjangkau",
     },
     {
-      year: "2023",
+      year: "2025",
       title: "First AI Product",
       description:
         "Meluncurkan Latihin.AI sebagai platform pembelajaran adaptif",
     },
     {
-      year: "2024",
+      year: "2025",
       title: "Expansion",
       description: "Memperluas layanan ke enterprise solutions dan consulting",
     },
     {
       year: "2025",
       title: "Growth",
-      description: "Mencapai 50+ project dan membangun tim teknologi terbaik",
+      description: "Mencapai 2+ project dan membangun tim teknologi terbaik",
     },
   ];
 
@@ -306,7 +307,7 @@ export default function About() {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-16">
+        <div className="text-center mt-12">
           <div className="relative inline-block">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-20"></div>
             <div className="relative bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8">
@@ -318,12 +319,11 @@ export default function About() {
                 pertumbuhan bisnis Anda
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-2xl font-semibold hover:from-blue-500 hover:to-purple-500 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-purple-500/25">
-                  Konsultasi Gratis
-                </button>
-                <button className="border-2 border-gray-600 text-gray-300 px-8 py-4 rounded-2xl font-semibold hover:border-purple-400 hover:text-purple-400 transition-all duration-300">
-                  Lihat Portfolio
-                </button>
+                <Link href="#portofolio">
+                  <button className="border-2 border-gray-600 text-gray-300 px-8 py-4 rounded-2xl font-semibold hover:border-purple-400 hover:text-purple-400 transition-all duration-300">
+                    Lihat Portfolio
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
