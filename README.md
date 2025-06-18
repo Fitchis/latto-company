@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# LATTO Company Website 🌐
 
-## Getting Started
+Welcome to the official repository of **LATTO Company** – a modern web presence for showcasing your business, services, and portfolio in a clean and professional manner.
 
-First, run the development server:
+## 🌟 Live Demo
+
+🔗 [https://latto-company.vercel.app/](https://latto-company.vercel.app/)
+
+## 🖼️ Overview
+
+LATTO Company is a responsive, visually engaging website built to present the identity, vision, and offerings of the company. It includes sections such as:
+
+- Hero introduction with a professional layout
+- Services/Projects showcase
+- About Us and team/company philosophy
+- Contact form or call-to-action section
+
+## 🛠️ Tech Stack
+
+This project is built using the following technologies:
+
+- **React.js** – Modern JavaScript UI framework
+- **Tailwind CSS** – Utility-first CSS framework for styling
+- **TypeScript** – Optional (if used) for type safety
+- **Vite** – Lightning-fast frontend build tool
+- **Deployed on Vercel** – Fast and scalable deployment platform
+
+## 📁 Project Structure
 
 ```bash
+├── public/             # Static assets
+├── src/
+│   ├── components/     # Reusable UI components
+│   ├── pages/          # Page-level components
+│   ├── assets/         # Images, icons, etc.
+│   └── App.tsx         # Root app component
+├── index.html
+├── tailwind.config.js
+└── package.json
+````
+
+## 🚀 Getting Started
+
+To run the project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/latto-company.git
+cd latto-company
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and visit `http://localhost:5173`
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📦 Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+## 📬 Contact
 
-To learn more about Next.js, take a look at the following resources:
+For questions or collaborations:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* 📧 Email: [your.email@example.com](mailto:your.email@example.com)
+* 🌐 Website: [latto-company.vercel.app](https://latto-company.vercel.app/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+> Made with ❤️ by LATTO Company Team
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
